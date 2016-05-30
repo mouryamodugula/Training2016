@@ -1,0 +1,159 @@
+<html>
+     <head>
+          <title> KLU APPLICATION FORM </title>
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">          
+    	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+          <script type="text/javascript">
+      		$(document).ready(function(){
+      			$("#btnSave").click(function(){
+      				var studentName= $("#txtName").val();
+      				$("#spnStudentName").html(studentName);
+
+      				var StudentFatherName=$("#txtFatherName").val();
+      				$("#spnStudentFatherName").html(StudentFatherName);
+
+      				var StudentAddress=$("#txtAddress").val();
+      				$("#spnStudentAddress").html(StudentAddress);
+      			});
+      		});
+          </script>
+         
+    </head>
+    <body>
+	    <nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">K L UNIVERSITY</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li><a href="#">Home</a></li>
+		      <li><a href="#">Groups</a></li>
+		      <li><a href="#">About colage</a></li> 		 
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="#"><span class="glyphicon glyphicon-home"></span> Login</a></li>		      		    
+		    </ul>
+		  </div>
+		</nav>
+
+    	<form>
+		  	<div class="container">		  	
+				<div class="well well-sm" id="myWell">
+					<h4>Application Form</h4>
+				</div>
+		  		<div class="row">
+		  			<div class="col-sm-6">		  			
+			    		<div class="form-group">
+						    <label for="txtName">Student  Name:</label>
+						    <input type="text" class="form-control" id="txtName">			    
+			      
+					  	</div>
+		  			</div>
+		  			<div class="col-sm-6">
+			    		<div class="form-group">
+						    <label for="txtFatherName">Student Father Name:</label>
+						    <input type="text" class="form-control" id="txtFatherName">
+		  				</div>
+		  			</div>
+		  		</div>	
+		  		<div class="row">
+		  			<div class="col-sm-6">
+			    		<div class="form-group">
+						    <label for="txtAddress">Student Address:</label>
+						    <textarea class="form-control" id="address" cols="5"> </textarea>
+			      			
+					  	</div>			  			
+		  			</div>
+		  			<div class="col-sm-6">		  					  			
+			    		<div class="form-group has-feedback">
+						    <label>Student Gender:</label>
+						    <div class="radio">
+							  <label> <input type="radio" name="gender" id="g_male">Male</label>							
+							  <label> <input type="radio" name="gender" id="g_female">Female</label>
+							</div>
+					  	</div>
+		  			</div>
+		  		</div>		  			
+		  		<div class="row">
+		  			<div class="col-sm-6">	
+		  				<div class="form-group">
+		  					<label for="txtPhone">Student Phone:</label>
+		  					<input type="text" name="txtPhone" id="txtPhone" class="form-control">
+		  				</div>
+		  			</div>
+		  			<div class="col-sm-6">		  					
+		  				<div class="form-group">
+		  					<label for="txtPercent">Student Percentage:</label>
+		  					<input type="text" name="txtPercent" id="txtPercent" class="form-control">
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="row">
+		  			<div class="col-sm-4">
+			    		<div class="form-group">
+			    			<button type="button" id="btnSave" class="btn btn-primary">Save</button>	
+			    			<button type="button" id="btnCancel" class="btn btn-danger disabled">Cancel</button>			    		
+					  	</div>
+		  			</div>
+		  			<div class="col-sm-4">
+			    		
+		  			</div>
+		  		</div>
+		  	</div>
+    	</form>
+
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-4">    				
+					<strong>Student Name : </strong>     				
+    			</div>
+    			<div class="col-sm-4">
+    				<span id="spnStudentName"></span>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-sm-4">    				
+					<strong>Student Father Name : </strong>     				
+    			</div>
+    			<div class="col-sm-4">
+    				<span id="spnStudentFatherName"></span>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-sm-4">    				
+					<strong>Student Address : </strong>     				
+    			</div>
+    			<div class="col-sm-4">
+    				<span id="spnStudentAddress"></span>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-sm-4">    				
+					<strong>Student Gender : </strong>     				
+    			</div>
+    			<div class="col-sm-4">
+    				<span id="spnStudentGender"></span>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-sm-4">    				
+					<strong>Student Phone : </strong>     				
+    			</div>
+    			<div class="col-sm-4">
+    				<span id="spnStudentPhone"></span>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-sm-4">    				
+					<strong>Student Percentage : </strong>     				
+    			</div>
+    			<div class="col-sm-4">
+    				<span id="spnStudentPercentage"></span>
+    			</div>
+    		</div>
+    	</div>
+
+	</body>    
+</html>
