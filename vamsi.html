@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My file </title>
+    <link rel="stylesheet" d href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#txtName").keyup(function () {
+                var name = $("#txtName").val();
+                $("#spnName").html(name);
+            });
+
+            $("#txtSurName").keyup(function () {
+                var name = $("#txtSurName").val();
+                $("#spnSurName").html(name);
+            });
+
+            $("#txtMobile").keyup(function () {
+                var MobileNumber = $("#txtMobile").val();
+                $("#spnMobileNumber").html(MobileNumber);
+            });
+           
+            $("#txtEmail").keyup(function () {
+                var EmailID = $("#txtEmail").val();
+                $("#spnEmail").html(EmailID);
+            });
+            $("#txtHallTicket").keyup(function () {
+                var HallTicket = $("#txtHallTicket").val();
+                $("#spnHallTicket").html(HallTicket);
+            });
+            
+            
+
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">K L UNIVERSITY</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">About colage</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group has-feedback has-success">
+                                <label for="txtName">Name</label>
+                                <input type="text" id="txtName" class="form-control" maxlength="25" />
+                                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="txtSurName"> Surname </label>
+                                <input type="text" id="txtSurName" class="form-control" maxlength="25"  />
+                                <span class="glyphicon glyphicon-home form-control-feedback"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="txtMobile"> Mobile Number</label>
+                                <input type="text" id="txtMobile" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="txtEmail">EmailID</label>
+                                <input type="text" id="txtEmail" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="txtHallTicket">Hall Ticket Number</label>
+                                <input type="text" id="txtHallTicket" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button type="button" id="btnSubmit" class="btn btn-primary">Submit</button>
+                            <button type="button" id="btnCancel" class="btn btn-danger disabled">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="sidebar-nav-fixed pull-right affix">
+                    <div class="container">
+                        <div class="row">
+                            Name: <span id="spnName" class="text-uppercase"> (Name)  </span>
+                        </div>
+                        <div class="row">
+                            Surname: <span id="spnSurName" class="text-uppercase"> (Name)  </span>
+                        </div>
+                        <div class="row">
+                            Mobile Number: <span id="spnMobileNumber"class="text-uppercase"> (Name)  </span>
+                        </div>
+                        <div class="row">
+                            Email-ID: <span id="spnEmail"> (Name)  </span>
+                        </div>
+                        <div class="row">
+                            Hall Ticket Number: <span id="spnHallTicket"> (Name)  </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
